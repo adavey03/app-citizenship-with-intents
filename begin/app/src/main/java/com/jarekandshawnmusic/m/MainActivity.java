@@ -21,7 +21,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -38,7 +38,7 @@ import java.util.List;
  * It displays a grid of supported artists, and launches an intent for ArtistActivity
  * to display the artist detail when selected.
  */
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getName();
     final MyMusicStore mMyMusicStore = MyMusicStore.getInstance();
 

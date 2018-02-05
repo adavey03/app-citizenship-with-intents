@@ -19,7 +19,7 @@ package com.jarekandshawnmusic.m;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -41,7 +41,7 @@ import java.util.Map;
  * This activity should be launched with an intent that has the artist's deep-link
  * from the music store set with setData(Uri).
  */
-public class ArtistActivity extends ActionBarActivity {
+public class ArtistActivity extends AppCompatActivity {
 
     private static final String TAG = ArtistActivity.class.getName();
     private Boolean mArtistInfoExpanded = false;

@@ -25,7 +25,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -134,7 +134,7 @@ public class PlaylistFragment extends Fragment implements MediaPlayerService.Pro
                 ImageButton button = (ImageButton) view;
                 View scrollView = getActivity().findViewById(R.id.artist_scroll_view);
                 View playlistDetailView = getActivity().findViewById(R.id.playlist_detail);
-                ActionBar actionBar = ((ActionBarActivity)getActivity()).getSupportActionBar();
+                ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
                 if (!mPlaylistExpanded) {
                     scrollView.setVisibility(View.GONE);
                     playlistDetailView.setVisibility(View.VISIBLE);
